@@ -1,0 +1,86 @@
+.user-navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fcebcd;
+    border-bottom: 3px solid #BC9E54;
+    backdrop-filter: blur(10px);
+  }
+  
+  body.dark-mode .user-navbar {
+    background: rgba(18, 18, 18, 0.95);
+    border-bottom-color: #D4AF37;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #b8860b;
+    text-decoration: none;
+  }
+  
+  .brand .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  body.dark-mode .nav-link {
+    color: #f8f9fa;
+  }
+  
+  .nav-link.active {
+    color: #D4AF37 !important;
+  }
+  
+  .cart-icon {
+    position: relative;
+    color: #333;
+    font-size: 1.3rem;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    padding: 2px 6px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .profile-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  body.dark-mode .profile-icon {
+    color: white;
+  }
+  
+  .dark-toggle {
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  

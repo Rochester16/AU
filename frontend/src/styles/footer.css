@@ -1,0 +1,104 @@
+/* ===========================
+   AUREVRA JEWELRY FOOTER
+   =========================== */
+
+   .footer {
+    width: 100%;
+    padding: 50px 20px;
+    background: #fcebcd;
+    color: #333;
+    border-top: 3px solid #BC9E54;
+    margin-top: 50px;
+  }
+  
+  body.dark-mode .footer {
+    background: rgba(18, 18, 18, 0.95);
+    color: #f8f9fa;
+    border-top-color: #D4AF37;
+  }
+  
+  /* GRID LAYOUT */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* LOGO + BRAND */
+  .footer-logo img {
+    width: 55px;
+  }
+  
+  .footer-logo h2 {
+    font-weight: bold;
+    color: #b8860b;
+  }
+  
+  body.dark-mode .footer-logo h2 {
+    color: #D4AF37;
+  }
+  
+  /* SECTION TITLES */
+  .footer-section h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #b8860b;
+  }
+  
+  body.dark-mode .footer-section h3 {
+    color: #D4AF37;
+  }
+  
+  .footer-section hr {
+    border: none;
+    border-bottom: 2px solid #BC9E54;
+    margin-bottom: 10px;
+  }
+  
+  body.dark-mode .footer-section hr {
+    border-bottom-color: #D4AF37;
+  }
+  
+  /* TEXT */
+  .footer p,
+  .footer a {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
+  }
+  
+  body.dark-mode .footer p,
+  body.dark-mode .footer a {
+    color: #ddd;
+  }
+  
+  /* SOCIAL ICONS */
+  .footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    transition: opacity 0.2s;
+  }
+  
+  .footer-social img:hover {
+    opacity: 0.7;
+  }
+  
+  /* BOTTOM TEXT */
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #BC9E54;
+  }
+  
+  body.dark-mode .footer-bottom {
+    border-top-color: #D4AF37;
+  }
+  

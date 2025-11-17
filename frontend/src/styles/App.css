@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ============================
+   AUREVRA ADMIN THEME COLORS
+   ============================ */
+:root {
+    --bg: #f6f1e7;                 /* Main background */
+    --panel: #fffaf2;              /* Cards / containers */
+    --border: #d9cbb6;             /* Soft beige border */
+    --text: #3e2e18;               /* Dark warm brown */
+    --text-light: #5a4525;         /* Slightly lighter brown */
+
+    --gold: #c7a34b;               /* Aurevra gold */
+    --gold-dark: #b89336;          /* Hover gold */
+
+    --shadow: rgba(0,0,0,0.06); 
+}
+
+/* ============================
+   GLOBAL BODY
+   ============================ */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Disable blur + background image layers */
+body::before,
+body::after {
+    content: none !important;
+}
+
+/* ============================
+   CONTAINER
+   ============================ */
+.app-container {
+    padding: 25px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* ============================
+   NAVBAR
+   ============================ */
+.navbar {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    box-shadow: 0 3px 10px var(--shadow);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin: 25px;
+}
+
+.navbar a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.navbar a:hover {
+    color: var(--gold);
+}
+
+/* Navbar button */
+.navbar button {
+    background: var(--gold);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.navbar button:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+}
